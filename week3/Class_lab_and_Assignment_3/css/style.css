@@ -1,0 +1,287 @@
+/*
+Project Name: Relaxr Project 2
+Client: Relaxr
+Author: Christine Fulcher
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP / LAYOUT HACKS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* Body & Thru-Styles
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 960px;
+  height: 100%;
+  margin: auto;
+}
+
+/*thru-styles*/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: pink;
+}
+
+/******************************************
+/* Header
+/*******************************************/
+
+header {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 90px;
+    background-color: #033048;
+}
+
+h1 {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    color: white;
+    left: 50px;
+    top: 25px;
+    font-size: 24px; 
+    font-weight: 800;
+}
+
+nav {
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+header li {
+    display: inline;
+    padding-right: 30px;
+    font-size: 18px; 
+    font-weight: 600; 
+
+}
+nav a  {  
+    color: #f9e42e;
+}
+
+
+/******************************************
+/* Section - Main
+/*******************************************/
+
+main {
+    box-sizing: border-box;
+    position: relative;
+    height: 1300px;
+    width: 100%;
+    padding-top: 30px;
+    background-color: #f0efef;
+}
+
+#Main_Content {
+    position: relative;
+    height: 500px;
+    width: 600px;
+    display: inline-block;
+    left: 50px;
+}
+
+#Main_Content img {
+    width: 600px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+#Main_Content div {
+    box-sizing: border-box;
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#Main_Content a {
+    color: black;
+
+}
+
+#Main_Content p::first-letter {
+  font-size: 350%;
+  font-weight: 600;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  float: left;
+}
+
+#Aside_Content {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 70px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+#Aside_Content li {
+    font-size: 18px;
+    font-weight: 200;
+
+}
+
+#Aside_Content p {
+    padding-bottom: 0px;
+}
+
+/*** why can't I get padding in between
+the two sections?  Nothing is working!
+
+h4 ul:last-child {
+    padding-bottom: 20px;
+}
+
+Hailey, HAAAALP
+
+**/
+
+#Aside_Content span {
+    font-weight: 800;
+}
+
+#Aside_Content img {
+    padding-top: 30px;
+}
+
+/******************************************
+/* Section - Bar
+/*******************************************/
+
+#bar {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #f9e42e;
+  margin: auto;
+  height: 50px;
+  padding-top: 12px;
+}
+
+#bar div {
+  position: relative;
+  background-color: #033048;
+  text-align: center;
+  margin: auto;
+  height: 25px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 12px;
+  width: 150px;
+  line-height:25px;
+}
+
+/******************************************
+/* Footer
+/*******************************************/
+
+/* Overall Footer Layout */
+
+footer {
+   position:relative;
+   width:100%;
+   height:150px;   
+   background-color: #121212;
+   padding-top: 10px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 10px;   
+    justify-content: space-between;
+}
+
+.flex-item {
+    max-width: 50%;
+}
+
+
+/* Twitter & Facebook Image Layout*/
+
+footer img {
+    height: auto;
+    width: auto;
+    max-width: 30px;
+    max-height: 30px; 
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/* Footer Font Styling */
+
+.Yellow {
+    font-weight: 800;
+    font-size: 24px;
+    color: #f9e42e;
+}
+
+.copy {
+    font-weight: 600;
+    font-size: 9px;
+    color: white;
+}
+
+.bar a {
+    color: white;
+}
