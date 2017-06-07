@@ -13,9 +13,41 @@
 	</head>
 
 	<body>
+		<!--Floating Options-->
+		<div class="floater" id="credit_card_options">
+			<h2>What is your credit score?</h2>
+			<form>
+				<input type="radio" name="c_score" value=">750" id="option1">  >750
+				<br>
+				<input type="radio" name="c_score" value="650-750" id="option2">  650-750
+				<br>
+				<input type="radio" name="c_score" value="<650" id="option3">  < 650
+				<br>
+			</form>
+		</div>
+<!--Row1-->
+	<div id="wrapper">
+	<!--Cube1-->
 		<section class="container"> 
 			<div id="cc_cube" class="show-front">
-				<figure class="front">1</figure>
+				
+				<a href="#"><figure id="credit_card" class="front"><div class='text'>Credit Cards</div></figure></a>
+				
+				<a href="https://creditcards.chase.com/a1/sapphire/reserve"><figure id="cube1_back" class="back"><div class='text'>Chase Sapphire Reserve</div></figure></a>
+				
+				<a href="https://creditcards.chase.com/credit-cards/chase-sapphire-preferred"><figure class="right"><div class='text'>Chase Sapphire Preferred</div></figure></a>
+
+				<a href="https://www.citi.com/credit-cards/credit-card-details/citi.action?ID=citi-double-cash-credit-card"><figure class="left"><div class='text'>Citi Double Cash</div></figure></a>
+
+				<figure class="top">5</figure>
+				
+				<figure class="bottom">6</figure>
+			</div>
+		</section>
+	<!--Cube2-->
+		<section class="container">
+			<div id="cc_cube" class="cube2 show-front">
+				<figure class="front"><div class='text'>Student Loans</div></figure>
 				<figure class="back">2</figure>
 				<figure class="right">3</figure>
 				<figure class="left">4</figure>
@@ -23,18 +55,54 @@
 				<figure class="bottom">6</figure>
 			</div>
 		</section>
-		<!--Testing rotation functionality-->
-		<section id="options">
-			<p id="show-buttons">
-				<button id="button1"class="show-front"> Show 1</button>
-				<button id="button2" class="show-back"> Show 2</button>
-				<button id="button3" class="show-right"> Show 3</button>
-				<button id="button4" class="show-left"> Show 4</button>
-				<button id="button5" class="show-top"> Show 5</button>
-				<button id="button6" class="show-bottom"> Show 6</button>
-			<p>
+	<!--Cube3-->
+		<section class="container">
+			<div id="cc_cube" class="cube3 show-front">
+				<figure class="front"><div class='text'>Savings</div></figure>
+				<figure class="back">2</figure>
+				<figure class="right">3</figure>
+				<figure class="left">4</figure>
+				<figure class="top">5</figure>
+				<figure class="bottom">6</figure>
+			</div>
 		</section>
-		<!--Testing-->
+	</div>
+<!--Row 2-->
+	<div id="wrapper2">
+	<!--Cube4-->
+		<section class="container"> 
+			<div id="cc_cube" class="cube4 show-front">
+				<figure class="front"><div class='text'>Investing</div></figure>
+				<figure class="back">2</figure>
+				<figure class="right">3</figure>
+				<figure class="left">4</figure>
+				<figure class="top">5</figure>
+				<figure class="bottom">6</figure>
+			</div>
+		</section>
+	<!--Cube5-->
+		<section class="container">
+			<div id="cc_cube" class="cube5 show-front">
+				<figure class="front"><div class='text'>Retirement</div></figure>
+				<figure class="back">2</figure>
+				<figure class="right">3</figure>
+				<figure class="left">4</figure>
+				<figure class="top">5</figure>
+				<figure class="bottom">6</figure>
+			</div>
+		</section>
+	<!--Cube6-->
+		<section class="container">
+			<div id="cc_cube" class="cube6 show-front">
+				<figure class="front"><div class='text'>Blog Basics</div></figure>
+				<figure class="back">2</figure>
+				<figure class="right">3</figure>
+				<figure class="left">4</figure>
+				<figure class="top">5</figure>
+				<figure class="bottom">6</figure>
+			</div>
+		</section>
+	</div>
 	<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
